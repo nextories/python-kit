@@ -812,7 +812,7 @@ class Span(object):
             return self.link.get_url(link_resolver)
 
         def get_target(self):
-            return self.link.target
+            return self.link.__dict__.get('target', False)
 
 
 class Text(object):
