@@ -814,8 +814,7 @@ class Span(object):
         def get_target(self):
             if isinstance(self.link, Fragment.WebLink):
                 return self.link.target
-            else:
-                return None
+            return None
 
 
 class Text(object):
