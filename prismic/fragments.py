@@ -812,7 +812,10 @@ class Span(object):
             return self.link.get_url(link_resolver)
 
         def get_target(self):
-            return self.link.__dict__.get('target', False)
+            if isinstance(self.link, Fragment.WebLink):
+                return self.link.target
+            else:
+                return None
 
 
 class Text(object):
