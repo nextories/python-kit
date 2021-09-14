@@ -704,7 +704,7 @@ class StructuredText(object):
             return "<strong>" + content + "</strong>"
         elif isinstance(span, Span.Hyperlink):
             if span.get_target():
-                return """<a href="%(url)s" target="%(target)s">"%(content)s"</a>""" % {
+                return """<a href="%(url)s" target="%(target)s">%(content)s</a>""" % {
                     "url": span.get_url(link_resolver),
                     "target": span.get_target(),
                     "content": content
