@@ -5,7 +5,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 from collections import namedtuple, defaultdict, OrderedDict
 import logging
-import cgi
+import html as cgi
 import re
 import datetime
 
